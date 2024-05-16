@@ -1,0 +1,58 @@
+@font-face {
+  font-family: 'Cantarell-Bold';
+  src:url('Cantarell-Bold.ttf') format('truetype')
+}
+body{
+    background-image: url(background/background2.jpg);
+    background-size: 100%,100%;
+    background-repeat: initial;
+}
+ 
+ 
+ #gridpic{
+    display: grid;
+    grid-template-columns: auto ;
+    row-gap: 40px;
+ }
+ 
+
+ #gridpic>div>img{
+    align-items: end;
+ }
+  
+  #gridpic>p{
+   color: white;
+   font-size: 100%;
+  }
+  #well{
+       
+       color: white;
+       font-size: 250%;
+       margin-top: 5%;
+       margin-right: 38%;
+       font-family: Cantarell-Bold;
+      
+  }
+  #logo{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+  }
+  a{
+    align-items: center;
+  }
+  #start{
+    color: white;
+    font-size: 150%;
+    text-align: center;
+    font-family: Cantarell-Bold;
+    
+  }
+  #column{
+    display: flex;
+    flex-direction: row;
+    height: 20%;
+  }
+  div>a>img{
+    margin-left: 40%;
+  }

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>space invaders</title>
+    <link rel="icon" type="image/x-icon" href="picturealien/alien-ga3a15f061_1280-removebg-preview.png">
+    <link rel="stylesheet" href="game.css">
+</head>
+<body   id="body">
+    <header  >
+        
+       <img src="logo.png" alt="alienlogo">
+        
+
+       <div class="rowheader">
+
+        <div>
+          <p>נקודות</p>
+          <p id="scores"></p>
+        </div>
+        
+        <div>
+          <p>שניות</p>
+          <p id="time"></p>
+        </div>
+
+        <div>
+          <p>שלב</p>
+          <p id="level"></p>
+        </div>
+
+      </div>
+    </header>
+    
+    <main>
+        <div class="row3">
+           <div class="set"><img src="setting-removebg-preview.png" alt="set" id="set"></div> 
+
+           <div id="popup">
+            <div id="titleset">
+                <p> השם שלי</p>
+              <img src="cross.png" alt="x" id="x" onmo>
+            </div>
+              
+              <input type="text" id="name" onfocus="this.value=''" value="enter you name:">
+              <p>בחר  חיזר </p>
+              <div id="alien">
+                <img src="picturealien/alien1.png" alt="alien" id="alien1" class="chosealien">
+                <img src="picturealien/alien2.png" alt="alien" id="alien2" class="chosealien">
+                <img src="picturealien/alien3.png" alt="alien" id="alien3" class="chosealien  selectedalien"   >
+              
+              </div> 
+              <p>בחר רקע </p>
+              <div id=" background">
+        
+                   <div class="line1">
+                       <img src="background/background1.jpg" alt="fdfd" id="background1">
+                       <img src="background/background2.jpg" alt="fdfd"  id="background2">
+                   </div>
+                   <div class="line1">
+                       <img src="background/background3.jpg" alt="fdf" id="background3">
+                       <img src="background/background4.jpg" alt="fdf" id="background4">
+                </div>
+                <div id="musica">מוזיקה:<span id="musicmode">כבוי</span></div>
+                <label class="switch">
+                  <input type="checkbox" checked>
+                  <span class="slider round off"></span>
+                </label>
+              </div>
+              <div id="timeselect">:בחר זמן למשחק </div>
+              <div class="custom-select" style="width:200px;">
+                <select id="select">
+      
+                  <option value="10" class="timegame">10 שניות</option>
+                  <option value="20" class="timegame">20 שניות</option>
+                  <option value="30" class="timegame"> 30 שניות </option>
+                  
+                </select>
+              </div>
+           </div>
+
+            <div id="mus"><img src="vidioe.png" alt="" id="music"></div>
+            <div id="pl"><img src="start.png" alt="icon" id="play"></div>
+            
+        </div>
+
+        <div class="colounms">
+
+            <div class="row1">
+               <div class=" astrunat astro1" >
+                <div> <img src="spaceship/space1 (1).png" alt="ast" class="astro" id="space1"></div>
+               </div>
+
+               
+               <div class=" astrunat astro2">
+                <div> <img src="spaceship/space1 (1).png" alt="ast" class="astro" id="space2"></div>
+               </div>
+
+               <div class=" astrunat astro3">
+                <div> <img src="spaceship/space1 (1).png" alt="ast" class="astro" id="space3"></div>
+               </div>
+                 
+               <div class=" astrunat astro4">
+                <div> <img src="spaceship/space1 (1).png" alt="ast" class="astro" id="space4"></div>
+               </div>
+
+            </div>
+            
+            
+               
+            <div class=" line2" >
+               
+               <div class=" astrunat astro5">
+                 <div><img src="spaceship/space1 (1).png " alt="ast"  class="astro" id="space5"></div>
+               </div>
+
+               
+               <div class=" astrunat astro6">
+                <div> <img src="spaceship/space1 (1).png" alt="ast" class="astro" id="space6"></div>
+               </div>
+
+               <div class=" astrunat astro7">
+                <div> <img src="spaceship/space1 (1).png" alt="ast" class="astro" id="space7"></div>
+               </div>
+
+               <div class=" astrunat astro8">
+                <div> <img src="spaceship/space1 (1).png" alt="ast" class="astro" id="space8"></div>
+               </div>
+
+            </div>
+            
+        </div>
+         
+        <div id="succesmesage">
+          
+          <p id="welldone"> !! כל הכבוד עברת שלב</p>
+          <p id="numscore"> </p>
+          <div id="sucesrow">
+            
+            <a href="main.html"> לסיום</a>
+            <div id="nextstage"><p>לשלב הבא</p> </div>
+
+          </div>
+          
+        </div>
+        
+        <div id="againmesege">
+           <div>
+            <p>כל הכבוד סימת את המשחק </p>
+            <p id="sumscore">  </p>
+           </div>
+           <div><a href="winer.html">למדליה</a></div>
+           
+        </div>
+        <div id="video">
+          
+            <div id="closex">x</div>
+            <div id="example">משחק דוגמא</div>
+          
+            <video width="100%" height="60%" controls>
+              <source src="newvid.mp4" type="video/mp4">
+              <source src="movie.ogg" type="video/ogg">
+              
+            </video>
+            <p>שים לב: מטרת המשחק היא לילחוץ אך ורק על החלליות  בהם מופעים אסרטונאוטים</p>
+        </div>
+
+    </main>
+    <audio class="music" controls="controls" hidden="hidden" loop>
+      <source src="DripDrop.mp3" type="audio/mpeg" />
+  </audio>
+    
+   <script src="game.js"></script>
+    
+</body>
+</html>
